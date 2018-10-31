@@ -2,6 +2,12 @@
 
 This is a python script which acts as a restful API to a sqllite database.  There are some assumptions the application accessing the data would handle.
 
+### Files
+
+ - oasis.db - sqlite db
+ - server.py - assessment server that runs the api on port 5002
+ - Assessment.postman_collection.json - A postman import to test the script, when running
+
 ### Endpoints
 
   - /questions - GET all the questions
