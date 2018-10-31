@@ -1,0 +1,98 @@
+{
+	"info": {
+		"_postman_id": "8b69a084-0560-4222-b281-98b1a2aa839d",
+		"name": "Assessment",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get Questions",
+			"request": {
+				"method": null,
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "127.0.0.1:5002/questions",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5002",
+					"path": [
+						"questions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Put User",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"last_name\":\"Losey\",\n\t\"first_name\":\"Doug\",\n\t\"email\":\"douglosey@gmail.com\"\n}"
+				},
+				"url": {
+					"raw": "127.0.0.1:5002/users",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5002",
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post Test",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"sessionId\": \"test-data\",\n\t\"userId\": \"test-user\",\n\t\"answer1\": \"test-answer1\",\n\t\"answer2\": \"test-answer2\",\n\t\"answer3\": \"test-answer-3\"\n}"
+				},
+				"url": {
+					"raw": "127.0.0.1:5002/tests",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5002",
+					"path": [
+						"tests"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
