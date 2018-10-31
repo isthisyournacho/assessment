@@ -46,7 +46,9 @@ Example Request (Get):
 http://127.0.0.1:5002/questions
 
 Example Response:
+```json
 {"questions": [{"id": 1, "question": "What is up?", "correctAnswer": "Not Down.", "incorrectAnswer1": "Down", "incorrectAnswer2": "Blue"}, {"id": 2, "question": "What is east?", "correctAnswer": "Not West.", "incorrectAnswer1": "West", "incorrectAnswer2": "Zelda"}, {"id": 3, "question": "What's the meaning of life?", "correctAnswer": "42", "incorrectAnswer1": "No one knows", "incorrectAnswer2": "Zoidberg"}]}
+```
 
 #### Users
 /users - POST user
