@@ -15,6 +15,8 @@ class Questions(Resource):
         query = conn.execute("select * from questions") # This line performs query and returns json result
         return {'questions': [dict(zip(tuple (query.keys()) ,i)) for i in query.cursor]} # Fetches first column that is Employee ID
 
+    #TO DO:  Support for HTML and images in base64
+
 class Users(Resource):
     def post(self):
         conn = db_connect.connect()
