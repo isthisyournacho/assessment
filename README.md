@@ -42,16 +42,16 @@ $ python server.py
 #### Questions
 /questions - GET all the questions
 
-Example Call (Get):
+Example Request (Get):
 http://127.0.0.1:5002/questions
 
-Example Payload:
+Example Response:
 {"questions": [{"id": 1, "question": "What is up?", "correctAnswer": "Not Down.", "incorrectAnswer1": "Down", "incorrectAnswer2": "Blue"}, {"id": 2, "question": "What is east?", "correctAnswer": "Not West.", "incorrectAnswer1": "West", "incorrectAnswer2": "Zelda"}, {"id": 3, "question": "What's the meaning of life?", "correctAnswer": "42", "incorrectAnswer1": "No one knows", "incorrectAnswer2": "Zoidberg"}]}
 
 #### Users
 /users - POST user
 
-Example Call (Post):
+Example Request (Post):
 http://127.0.0.1:5002/users
 
 JSON Body:
@@ -64,7 +64,7 @@ JSON Body:
 }
 ```
 
-Example Payload:
+Example Response:
 ```json
 {
     "status": "success",
@@ -76,7 +76,7 @@ Example Payload:
 
 /tests - POST test
 
-Example Call (Post):
+Example Request (Post):
 http://127.0.0.1:5002/tests
 
 JSON Body:
@@ -89,7 +89,7 @@ JSON Body:
 	"answer3": "test-answer-3"
 }
 ````
-Example Payload:
+Example Response:
 ```json
 {
     "status": "Success - Final Assessment Questions have been Submitted!"
